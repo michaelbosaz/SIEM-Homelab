@@ -69,6 +69,8 @@ class node_operator toneIndigo
 
 ### Agent Connectivity with the VM
 The simplest to make sure the Ubuntu agent is connected successfully is through the Wazuh dashboard on the upper left corner.
+![Project Screenshot](images/wazuhdashboard.png)
+
 
 ## Learning Takeaways
 This SIEM home lab introduces foundational cybersecurity concepts relevent to SOC analysts.
