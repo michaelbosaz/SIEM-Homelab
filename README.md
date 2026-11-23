@@ -65,6 +65,14 @@ class node_operator toneIndigo
 - Through the utilization of the unmodified script found in Wazuh Documentation: [Detecting and removing malware using VirusTotal](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html) I was able to establish as system that deletes detected malicious files
 - The script deletes files that are flagged by the VirusTotal API
 
+## Learning Takeaways
+This SIEM home lab introduces foundational cybersecurity concepts relevent to SOC analysts.
+
+- Creating and understanding dashboards that organize data
+- Integrating python scripts for preventing malware attempts and establishing active response
+- Identifying threats using Wazuh
+- Setting up Ubuntu VMs
+  
 ## Future Improvements
 - Add a windows endpoint to explore the use of multiple operating systems in one SIEM
 - Add a Kali VM in order to generate real attacks to see how they appear in the log
