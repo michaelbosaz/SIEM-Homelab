@@ -50,3 +50,22 @@ class node_fim,node_virustotal toneAmber
 class node_response_script,node_flagged_files toneMint
 class node_operator toneIndigo
 ```
+## Configuration
+
+File Integrity Monitoring:
+- Detects file creation, deletion and changes
+- The Ubuntu agent was set up to detect changes in the entire endpoint system
+  
+VirusTotal:
+- Integrated into Wazuh allowing communication between VirusTotal and the Wazuh SIEM
+- VirusTotal can generate alerts based on the config rules
+- Alerts are used in Active Response Deletion
+
+Active Response:
+- Through the utilization of the unmodified script found in Wazuh Documentation: [Detecting and removing malware using VirusTotal](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html) I was able to establish as system that deletes detected malicious files
+- The script deletes files that are flagged by the VirusTotal API
+
+## Future Improvements
+- Add a windows endpoint to explore the use of multiple operating systems in one SIEM
+- Add a Kali VM in order to generate real attacks to see how they appear in the log
+- Add an allowlist with the goal of reducing false positives
