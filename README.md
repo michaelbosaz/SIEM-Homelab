@@ -75,9 +75,9 @@ The simplest to make sure the Ubuntu agent is connected successfully is through 
 ### VirusTotal Bad File Detection
 Once the VirusTotal API is set up the command that is used to see if malicious files are being detected will be trying to download a non-malicious eicar file that will still flag the system. I downloaded the file to a folder named malware in tmp.
 
-
+```bash
 curl https://secure.eicar.org/eicar.com -o /tmp/malware/eicar
-
+```
 
 
 
