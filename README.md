@@ -61,6 +61,22 @@ NOTE: All port numbers are set to their defaults and can be found on the [Wazuh 
 
 ---
 
+## Set-up
+
+Command used for Wazuh Host setup:
+
+```bash
+curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
+```
+
+Command used for Wazuh Agent setup:
+
+```bash
+curl -o wazuh-agent-4.14.10-1.x86_64.rpm https://packages.wazuh.com/4.x/yum/wazuh-agent-4.14.10-1.x86_64.rpm && sudo WAZUH_MANAGER='<YOUR_IP_ADDRESS (Server addr)>' WAZUH_AGENT_NAME='<YOUR_AGENT_NAME>' rpm -ihv wazuh-agent-4.14.10-1.x86_64.rpm
+```
+
+---
+
 ## Configuration
 
 ### File Integrity Monitoring:
