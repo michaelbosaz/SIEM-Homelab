@@ -54,7 +54,7 @@ class node_operator toneIndigo
 ### Lab Network
 
 | Host | Description | Operating System | Processors | Storage | RAM | IP Address |
-|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Wazuh Server | Responsible for hosting the dashboard and managing/generating alerts | Ubuntu 26.04.1 LTS | 2 | 50GB | 4GB | 192.168.202.129 |
 | Ubuntu Agnet | The endpoint that is being monitored by the server | Ubuntu 26.04.1 LTS | 2 | 50GB | 4GB | 192.168.202.130 |
 
