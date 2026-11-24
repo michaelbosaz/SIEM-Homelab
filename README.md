@@ -52,6 +52,8 @@ class node_operator toneIndigo
 ```
 ---
 
+### Components
+
 ## Configuration
 
 ### File Integrity Monitoring:
