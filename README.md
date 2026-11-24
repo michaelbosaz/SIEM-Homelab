@@ -51,17 +51,27 @@ class node_response_script,node_flagged_files toneMint
 class node_operator toneIndigo
 ```
 
-### Lab Network
+### Network
 
 | Host | Description | Operating System | Processors | Storage | RAM | IP Address |
 |---|---|---|---|---|---|---|
 | Wazuh Server | Responsible for hosting the dashboard and managing/generating alerts | Ubuntu 26.04.1 LTS | 2 | 50GB | 4GB | 192.168.202.129 |
-| Ubuntu Agnet | The endpoint that is being monitored by the server | Ubuntu 26.04.1 LTS | 2 | 50GB | 4GB | 192.168.202.130 |
+| Ubuntu Agent | The endpoint that is being monitored by the server | Ubuntu 26.04.1 LTS | 2 | 50GB | 4GB | 192.168.202.130 |
+
+NOTE: All port numbers are set to their defaults and can be found on the [Wazuh Documentation Website](https://documentation.wazuh.com/current/getting-started/architecture.html)
 
 ---
 
 ## Components
 
+| Component | Purpose | Version |
+|---|---|---|
+| Virtual Machine Software (VMware Workstation Pro) | hosting all of the VMs that are involved in the lab | 26H1 | 
+| SIEM (Wazuh) | Visualization and logging | v.4.14.10 |
+| Endpoint (Ubuntu Host) | Running the agent, collection of logs, execution of scripts | Ubuntu 26.04.1 LTS |
+| Malware Scanner (VirusTotal API) | Detects malicious files, creates alerts for them | v3 |
+| Active Response Automation (remove-threat.sh) *provided by Wazuh* | Automatically deletes malicious files detected by VirusTotal | / |
+| Malware Tester (eicar) | File that sets off VirusTotal flags, allows for verifying whether or not VirusTotal API and Active Response are Operational | / |
 
 ---
 
