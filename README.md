@@ -79,6 +79,8 @@ Once the VirusTotal API is set up the command that is used to see if malicious f
 curl https://secure.eicar.org/eicar.com -o /tmp/malware/eicar
 ```
 
+The command should generate the following results in the Wazuh 
+
 
 
 ## Learning Takeaways
