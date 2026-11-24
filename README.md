@@ -117,3 +117,8 @@ This SIEM home lab introduces foundational cybersecurity concepts relevent to SO
 - Add a windows endpoint to explore the use of multiple operating systems in one SIEM
 - Add a Kali VM in order to generate real attacks to see how they appear in the log
 - Add an allowlist with the goal of reducing false positives
+
+---
+##Acknoledgements
+
+Steps taken were from the [Wazuh Documentation Website](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html)
