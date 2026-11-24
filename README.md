@@ -9,46 +9,7 @@ This repository contains a simple SIEM homelab utilizing two ubuntu VMs (Wazuh s
 ## Architecture
 
 ```mermaid
-flowchart TD
 
-subgraph group_deployment["Wazuh setup"]
-  node_server["Wazuh server<br/>[ossec.conf]"]
-  node_agent["Wazuh agent<br/>[agent.conf]"]
-end
-
-subgraph group_detection["Threat detection"]
-  node_fim["File integrity monitoring<br/>[agent.conf]"]
-  node_virustotal["VirusTotal API"]
-end
-
-subgraph group_response["Automated response"]
-  node_response_script["Deletion script"]
-  node_flagged_files["Flagged files"]
-end
-
-node_operator(("Homelab operator"))
-
-node_operator -.->|"configures"| node_server
-node_operator -.->|"configures"| node_agent
-node_agent -.->|"monitors"| node_fim
-node_virustotal -.->|"marks"| node_flagged_files
-node_response_script -.->|"deletes"| node_flagged_files
-
-click node_server "https://github.com/michaelbosaz/siem-homelab/blob/main/configs/ossec.conf"
-click node_agent "https://github.com/michaelbosaz/siem-homelab/blob/main/configs/agent.conf"
-click node_fim "https://github.com/michaelbosaz/siem-homelab/blob/main/configs/agent.conf"
-
-classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
-classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554
-classDef toneAmber fill:#fef3c7,stroke:#d97706,stroke-width:1.5px,color:#78350f
-classDef toneMint fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#14532d
-classDef toneRose fill:#ffe4e6,stroke:#e11d48,stroke-width:1.5px,color:#881337
-classDef toneIndigo fill:#e0e7ff,stroke:#4f46e5,stroke-width:1.5px,color:#312e81
-classDef toneTeal fill:#ccfbf1,stroke:#0f766e,stroke-width:1.5px,color:#134e4a
-class node_server,node_agent toneBlue
-class node_fim,node_virustotal toneAmber
-class node_response_script,node_flagged_files toneMint
-class node_operator toneIndigo
 ```
 
 ### Network
