@@ -50,6 +50,8 @@ class node_fim,node_virustotal toneAmber
 class node_response_script,node_flagged_files toneMint
 class node_operator toneIndigo
 ```
+---
+
 ## Configuration
 
 ### File Integrity Monitoring:
@@ -64,6 +66,8 @@ class node_operator toneIndigo
 ### Active Response:
 - Through the utilization of the unmodified script found in Wazuh Documentation: [Detecting and removing malware using VirusTotal](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html) I was able to establish as system that deletes detected malicious files
 - The script deletes files that are flagged by the VirusTotal API
+
+---
 
 ## Testing
 
@@ -81,7 +85,7 @@ curl https://secure.eicar.org/eicar.com -o /tmp/malware/eicar
 
 The command should generate the following results in the Wazuh 
 
-
+---
 
 ## Learning Takeaways
 This SIEM home lab introduces foundational cybersecurity concepts relevent to SOC analysts.
@@ -90,6 +94,8 @@ This SIEM home lab introduces foundational cybersecurity concepts relevent to SO
 - Integrating python scripts for preventing malware attempts and establishing active response
 - Identifying threats using Wazuh
 - Setting up Ubuntu VMs
+
+---
   
 ## Future Improvements
 - Add a windows endpoint to explore the use of multiple operating systems in one SIEM
