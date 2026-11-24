@@ -74,7 +74,7 @@ class node_operator toneIndigo
 ### Agent Connectivity with the VM
 The simplest to make sure the Ubuntu agent is connected successfully is through the Wazuh dashboard on the upper left corner.
 
-![Project Screenshot](images/wazuhdashboard.png)
+![Project Screenshot](images/WazuhDashboard.png)
 
 ### VirusTotal Bad File Detection
 Once the VirusTotal API is set up the command that is used to see if malicious files are being detected will be trying to download a non-malicious eicar file that will still flag the system. I downloaded the file to a folder named malware in tmp.
@@ -83,7 +83,13 @@ Once the VirusTotal API is set up the command that is used to see if malicious f
 curl https://secure.eicar.org/eicar.com -o /tmp/malware/eicar
 ```
 
-The command should generate the following results in the Wazuh 
+The command should generate the following results in the Wazuh:
+
+![Project Screenshot](images/IntegrationTesting.png)
+
+### Active Response Testing
+The same command is ran in the agent as the previous test, but the following results should generate instead:
+
 
 ---
 
