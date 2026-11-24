@@ -90,6 +90,7 @@ The command should generate the following results in the Wazuh:
 ### Active Response Testing
 The same command is ran in the agent as the previous test, but the following results should generate instead:
 
+![Project Screenshot](images/ActiveResponseTesting.png)
 
 ---
 
