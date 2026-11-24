@@ -119,6 +119,6 @@ This SIEM home lab introduces foundational cybersecurity concepts relevent to SO
 - Add an allowlist with the goal of reducing false positives
 
 ---
-##Acknoledgements
+## Acknowledgements
 
 Steps taken were from the [Wazuh Documentation Website](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html)
