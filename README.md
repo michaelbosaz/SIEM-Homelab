@@ -137,4 +137,4 @@ This SIEM home lab introduces foundational cybersecurity concepts relevent to SO
 ---
 ## Acknowledgements
 
-Steps taken were from the [Wazuh Documentation Website](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html)
+Main set-up steps from [Wazuh Documentation Website](https://documentation.wazuh.com/current/proof-of-concept-guide/detect-remove-malware-virustotal.html)
